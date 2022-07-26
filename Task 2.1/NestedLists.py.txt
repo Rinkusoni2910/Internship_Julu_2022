@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    N=int(input())
+    lst=[]
+    for i in range(N):
+        name=input()
+        score=float(input())
+        ele = [name, score]
+        lst.append(ele)
+    sorted_score=sorted(list(set([x[1] for x in lst])))
+    second_lowest=sorted_score[1]
+    nl=[]
+    for  students in lst:
+        if second_lowest==students[1]:
+            nl.append(students[0])
+    for students in sorted(nl):
+        print(students)
