@@ -1,0 +1,10 @@
+T=int(input())
+for i in range(T):
+    n_a=int(input())
+    A=set(map(int,input().split()))
+    n_b=int(input())
+    B=set(map(int,input().split()))
+    if B.intersection(A)==A:
+        print(True)
+    else:
+        print(False)

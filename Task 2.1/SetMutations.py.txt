@@ -1,0 +1,18 @@
+n=int(input())
+A=set(map(int, input().split()))
+N=int(input())
+for i in range(N):
+    op_name,len=input().split()
+    op_set=set(map(int, input().split()))
+    if op_name=='intersection_update':
+        A.intersection_update(op_set)
+    elif op_name=='update':
+        A.update(op_set)
+    elif op_name=='symmetric_difference_update':
+        A.symmetric_difference_update(op_set)
+    elif op_name=='difference_update':
+        A.difference_update(op_set)
+sum=0
+for ele in A:
+    sum=sum+ele       
+print(sum)

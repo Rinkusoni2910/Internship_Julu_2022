@@ -1,0 +1,11 @@
+K=int(input())
+uo_li=list(map(int,input().split()))
+s1=set()
+s2=set()
+for i in range(len(uo_li)):
+    if uo_li[i] in s1:
+        s2.add(uo_li[i])
+    else:
+        s1.add(uo_li[i])
+s3=list(s1.difference(s2))
+print(s3[0])

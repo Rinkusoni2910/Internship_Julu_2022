@@ -1,0 +1,10 @@
+A=set(map(int,input().split()))
+n=int(input())
+li=[]
+for i in range(n):
+    li.append(set(map(int,input().split())))
+res=True
+for ele in li:
+    if not A.issuperset(ele):
+        res=False
+print(res)
