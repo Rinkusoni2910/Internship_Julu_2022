@@ -1,0 +1,9 @@
+M=int(input())
+A = set(input().split())
+N=int(input())
+B = set(input().split())
+p=A.difference(B)
+q=B.difference(A)
+r=p.union(q)
+print ('\n'.join(sorted(r, key=int)))
+    
