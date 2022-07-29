@@ -1,0 +1,12 @@
+N,M=map(int,input().split())
+s="WELCOME"
+for i in range(N):
+    if i%2==1:
+        x=".|."*(i)
+        print(x.center(M,'-'))
+print(s.center(M,'-'))
+for i in range(N-1):
+    y=N-i-2
+    if y%2==1:
+        x=".|."*(N-i-2)
+        print(x.center(M,'-'))
