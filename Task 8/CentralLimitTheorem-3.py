@@ -1,0 +1,7 @@
+size = float(input())
+mean = float(input())
+std_dev = float(input())
+distribution_percentage = float(input())
+z = float(input())
+print(round(mean - (std_dev  / (size**0.5))* z, 2))
+print(round(mean + (std_dev / (size**0.5))* z, 2))
